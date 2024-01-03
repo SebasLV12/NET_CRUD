@@ -15,6 +15,7 @@ Copy code
 git clone https://github.com/SebasLV12/Prayaga_CRUD/
 
 Configurar la Base de Datos:
+
     -- Crear tabla 'facultad'
     CREATE TABLE facultad (
         id INT PRIMARY KEY,
