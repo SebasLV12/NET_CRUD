@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="carrerasdbModelStoreContainer" CdmEntityContainer="DbModels">
+    <EntitySetMapping Name="carrera">
+      <EntityTypeMapping TypeName="carreras.dbModel.carrera">
+        <MappingFragment StoreEntitySet="carrera">
+          <ScalarProperty Name="eliminado" ColumnName="eliminado" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="facultad" ColumnName="facultad" />
+          <ScalarProperty Name="nombre_carrera" ColumnName="nombre_carrera" />
+          <ScalarProperty Name="codigo_carrera" ColumnName="codigo_carrera" />
+          <ScalarProperty Name="creado_tmstp" ColumnName="creado_tmstp" />
+          <ScalarProperty Name="actualizado_tmstp" ColumnName="actualizado_tmstp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="facultad">
+      <EntityTypeMapping TypeName="carreras.dbModel.facultad">
+        <MappingFragment StoreEntitySet="facultad">
+          <ScalarProperty Name="eliminado" ColumnName="eliminado" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre_facultad" ColumnName="nombre_facultad" />
+          <ScalarProperty Name="codigo_facultad" ColumnName="codigo_facultad" />
+          <ScalarProperty Name="creado_tmstp" ColumnName="creado_tmstp" />
+          <ScalarProperty Name="actualizado_tmstp" ColumnName="actualizado_tmstp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

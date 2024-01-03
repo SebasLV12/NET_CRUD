@@ -1,0 +1,42 @@
+﻿@model Crud_prayaga.Models.facultad
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>facultad</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre_facultad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombre_facultad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.codigo_facultad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.codigo_facultad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.creado_tmstp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.creado_tmstp)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,2 @@
+C:\Repos_slv\Crud_prayaga\Crud_prayaga\obj\Debug\Crud_prayaga.csproj.AssemblyReference.cache
+C:\Repos_slv\Crud_prayaga\Crud_prayaga\obj\Debug\Crud_prayaga.csproj.CoreCompileInputs.cache

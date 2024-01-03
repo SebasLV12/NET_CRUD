@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="carreras.dbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="carrera">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="facultad" Type="int" />
+    <Property Name="nombre_carrera" Type="varchar" MaxLength="255" />
+    <Property Name="codigo_carrera" Type="varchar" MaxLength="50" />
+    <Property Name="creado_tmstp" Type="datetime2" Precision="7" />
+    <Property Name="actualizado_tmstp" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+    <Property Name="eliminado" Type="bit" />
+  </EntityType>
+  <EntityType Name="facultad">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="nombre_facultad" Type="varchar" MaxLength="255" />
+    <Property Name="codigo_facultad" Type="varchar" MaxLength="50" />
+    <Property Name="creado_tmstp" Type="datetime2" Precision="7" />
+    <Property Name="actualizado_tmstp" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+    <Property Name="eliminado" Type="bit" />
+  </EntityType>
+  <Association Name="FK__carrera__faculta__267ABA7A">
+    <End Role="facultad" Type="Self.facultad" Multiplicity="0..1" />
+    <End Role="carrera" Type="Self.carrera" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="facultad">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="carrera">
+        <PropertyRef Name="facultad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="carrerasdbModelStoreContainer">
+    <EntitySet Name="carrera" EntityType="Self.carrera" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="facultad" EntityType="Self.facultad" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__carrera__faculta__267ABA7A" Association="Self.FK__carrera__faculta__267ABA7A">
+      <End Role="facultad" EntitySet="facultad" />
+      <End Role="carrera" EntitySet="carrera" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
