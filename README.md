@@ -46,19 +46,19 @@ Asegúrese de tener todas las dependencias instaladas.
 Ejecute la aplicación.
 Endpoints Disponibles:
 
-Facultades:
+#Facultades:
 
-Obtener todas las facultades: GET /Facultad/Index
-Obtener detalles de una facultad: GET /Facultad/Details/{id}
-Crear una nueva facultad: POST /Facultad/Create
-Editar una facultad existente: POST /Facultad/Edit/{id}
-Eliminar (lógicamente) una facultad: POST /Facultad/Delete/{id}
-Obtener facultades eliminadas: GET /Facultad/GetDeleted
+-Obtener todas las facultades: GET /Facultad/Index
+-Obtener detalles de una facultad: GET /Facultad/Details/{id}
+-Crear una nueva facultad: POST /Facultad/Create
+-Editar una facultad existente: POST /Facultad/Edit/{id}
+-Eliminar (lógicamente) una facultad: POST /Facultad/Delete/{id}
+-Obtener facultades eliminadas: GET /Facultad/GetDeleted
 
-Carreras:
+#Carreras:
 
-Obtener todas las carreras: GET /Carreras/Index
-Obtener detalles de una carrera: GET /Carreras/Details/{id}
-Crear una nueva carrera: POST /Carreras/Create
-Editar una carrera existente: POST /Carreras/Edit/{id}
-Eliminar (lógicamente) una carrera: POST /Carreras/Delete/{id}
+-Obtener todas las carreras: GET /Carreras/Index
+-Obtener detalles de una carrera: GET /Carreras/Details/{id}
+-Crear una nueva carrera: POST /Carreras/Create
+-Editar una carrera existente: POST /Carreras/Edit/{id}
+-Eliminar (lógicamente) una carrera: POST /Carreras/Delete/{id}
